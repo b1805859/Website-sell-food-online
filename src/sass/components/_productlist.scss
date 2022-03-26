@@ -1,0 +1,43 @@
+.productlist {
+    min-height: 100vh;
+    margin-top: 5rem;
+    flex-direction: column;
+
+    @include flex(center, flex-start);
+
+    &__text {
+        font-size: 2rem;
+        font-weight: bold;
+        color: coral;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+    }
+
+    &__title {
+        margin-top: 1rem;
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #444;
+    }
+
+    &__cards {
+        margin-top: 3rem;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @include flex(center, center);
+    }
+
+    &__button {
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-weight: 500;
+
+        @include flex(center, center);
+    }
+}
